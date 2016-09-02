@@ -88,8 +88,8 @@ However, even if you don’t make the most efficient implementation possible, it
 to buy yourself enough time by throwing hardware at the problem.  In the end, when you do your refactor, it will
 be a lot easier because of the simplicity of the original implementation.
 
-These things really do kill projects, and even whole companies.  When you’re in a competitive atmosphere, it’s not
-the companies that work harder, but smarter.  It simply does not make sense to spend a significant amount of time
+This mentality does really kill projects, and even whole companies.  When you’re in a competitive atmosphere, it’s not
+the companies that work harder that succeed, but smarter.  It does not make sense to spend a significant amount of time
 coding a feature that you don’t know will be used.  Most of the time, you end up with way more code than you need,
 which is a liability. Compound that with the fact that many engineers don’t properly document their 
 implementations, and you have a hidden beast that no one fully understands making all of our work moving forward
