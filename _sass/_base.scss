@@ -204,3 +204,24 @@ pre {
         }
     }
 }
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+    padding-top: 35px;
+}
+
+.image-caption {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: .85em;
+    font-style: italic;
+}
+
+.hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
