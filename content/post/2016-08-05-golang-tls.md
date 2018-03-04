@@ -1,6 +1,12 @@
 ---
 date: 2016-08-05T12:56:36Z
-tags: golang tls ssl networking bolt neo4j
+tags: 
+    - golang 
+    - tls 
+    - ssl 
+    - networking 
+    - bolt 
+    - neo4j
 title: Client TLS Connections in Golang
 ---
 
