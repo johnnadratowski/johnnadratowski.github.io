@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Client TLS Connections in Golang"
-date:   2016-08-05 12:56:36 -0400
+date: 2016-08-05T12:56:36Z
 tags: golang tls ssl networking bolt neo4j
+title: Client TLS Connections in Golang
 ---
+
 TLS has always been a bit of a mystery to me.  I understand how it works from a high
 level, but when it comes to the internal workings of it I have no clue.  Hence, when an 
 [issue][graphene-issue] for my [Golang Neo4j Bolt Driver][golang-neo4j-bolt-driver] 
@@ -31,7 +31,7 @@ The [Golang Docs for TLS][golang-tls] docs are a little sparse, so I tried to fi
 information elsewhere that had some good examples.  After finding [this gist][tls-golang-gist]
 I had enough for the simplest (read: insecure) TLS client implementation. 
 
-{% highlight go %}
+{{< highlight go >}}
 if c.useTLS {
     conn, err = tls.Dial("tcp", url.Host, &tls.Config{
         MinVersion: tls.VersionTLS10,
@@ -44,7 +44,7 @@ if c.useTLS {
         return nil, nil, "", "", err
     }
 }
-{% endhighlight %}
+{{< / highlight >}}
 
 And... viola! We have a properly established connection.
 
@@ -56,7 +56,7 @@ I ended up finding
 which was a major help.  I was able to generate the keys necessary to test this using
 the following steps:
 
-{% highlight bash %}
+{{< highlight bash >}}
 # Create the root private key
 openssl genrsa -out rootCA.key 2048
 # Create the root certificate pem file
@@ -69,11 +69,11 @@ openssl req -new -key neo4j.key -out neo4j.csr
 openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out neo4j.cert -days 500 -sha256
 # Copy certificate + key to neo4j certificates folder
 cp ./neo4j.key ./neo4j.cert /path/to/neo4j/certificates/
-{% endhighlight %}
+{{< / highlight >}}
 
 I updated the go code to have the following implementation, based on another [gist][ca-cert-gist]:
 
-{% highlight go %}
+{{< highlight go >}}
 if c.useTLS {
     config := &tls.Config{
         MinVersion: tls.VersionTLS10,
@@ -95,7 +95,7 @@ if c.useTLS {
         return nil, nil, "", "", err
     }
 }
-{% endhighlight %}
+{{< / highlight >}}
 
 After updating the config for my local Neo to require SSL and running my tests, all 
 passed successfully.  I then attempted to run them against GrapheneDB using no custom
