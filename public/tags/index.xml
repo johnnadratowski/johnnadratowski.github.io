@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on John Nadratowski</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on John Nadratowski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Aug 2016 12:56:36 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bolt</title>
+      <link>http://example.org/tags/bolt/</link>
+      <pubDate>Fri, 05 Aug 2016 12:56:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/bolt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>http://example.org/tags/golang/</link>
+      <pubDate>Fri, 05 Aug 2016 12:56:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neo4j</title>
+      <link>http://example.org/tags/neo4j/</link>
+      <pubDate>Fri, 05 Aug 2016 12:56:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/neo4j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking</title>
+      <link>http://example.org/tags/networking/</link>
+      <pubDate>Fri, 05 Aug 2016 12:56:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssl</title>
+      <link>http://example.org/tags/ssl/</link>
+      <pubDate>Fri, 05 Aug 2016 12:56:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tls</title>
+      <link>http://example.org/tags/tls/</link>
+      <pubDate>Fri, 05 Aug 2016 12:56:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/tls/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
