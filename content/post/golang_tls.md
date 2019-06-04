@@ -8,6 +8,7 @@ tags:
     - bolt 
     - neo4j
 title: Client TLS Connections in Golang
+author: John Nadratowski
 ---
 
 TLS has always been a bit of a mystery to me.  I understand how it works from a high
